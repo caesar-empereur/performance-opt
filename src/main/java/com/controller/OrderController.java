@@ -30,7 +30,13 @@ public class OrderController {
     @GetMapping("/get")
     public List<Order> message(){
         log.info("接收到请求");
-
-        return orderRepository.findAll();
+        List<Order> orders = orderRepository.findAll();
+//        try {
+//            Thread.sleep(500);
+//        }
+//        catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+        return orders;
     }
 }

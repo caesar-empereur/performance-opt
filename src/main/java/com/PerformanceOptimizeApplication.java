@@ -14,7 +14,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @EntityScan("com")
 @EnableJpaRepositories("com")
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com"})
 @EnableSwagger2
 @ServletComponentScan
 public class PerformanceOptimizeApplication {
