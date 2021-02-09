@@ -23,7 +23,7 @@ public class HikariPoolMonitor {
     @Resource
     private HikariDataSource hikariDataSource;
 
-    @Scheduled(fixedRate = 500)
+//    @Scheduled(fixedRate = 500)
     public void printSchedule() {
         HikariPoolMXBean mxBean = hikariDataSource.getHikariPoolMXBean();
         log.info("监控指标： "
