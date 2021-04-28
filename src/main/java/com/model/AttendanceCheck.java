@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
  */
 @Data
 @Entity
-@Table(name = "t_attendance_check")
+@Table(name = "t_attendance_check_2000w")
 public class AttendanceCheck extends CommonField{
 
     @Id

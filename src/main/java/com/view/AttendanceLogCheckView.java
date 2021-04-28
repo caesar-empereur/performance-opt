@@ -1,20 +1,20 @@
-package com.model;
+package com.view;
 
 import lombok.Data;
 
-import javax.persistence.*;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 /**
  * @Description
  * @author: yangyingyang
- * @date: 2021/2/8.
+ * @date: 2021/2/24.
  */
 @Data
-@Entity
-@Table(name = "t_attendance_log_2000w")
-public class AttendanceLog extends CommonField{
+public class AttendanceLogCheckView {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -42,15 +42,9 @@ public class AttendanceLog extends CommonField{
 
     private LocalDateTime updateTime;
 
-    private String companyId = "deg47c74b54573";
 
-    private String companyName = "深圳派亚劳务公司";
-
-    private String orgCode = "SZ0000";
-
-    private String orgName = "深圳西部硅谷仓库";
-
-    private String groupId = "e85v8457834n5834";
-
-    private String groupName = "分拣组";
+    private Integer totalHour;
+    private Integer clearHour;
+    private Integer lateHour;
+    private Integer earlyHour;
 }

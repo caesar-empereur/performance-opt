@@ -23,7 +23,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 bootJar {
-    baseName = 'performance-opt'
+    baseName = 'performance-opt-local'
 }
 
 task createEmptySrc {
