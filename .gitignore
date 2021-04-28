@@ -6,6 +6,7 @@ out/
 .classpath
 *.log
 *.iml
+*.xml
 dev/
 application-dev.properties
 target/
