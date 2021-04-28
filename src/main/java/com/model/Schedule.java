@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
  */
 @Data
 @Entity
-@Table(name = "t_schedule")
+@Table(name = "t_schedule_2000w")
 public class Schedule {
 
     @Id
